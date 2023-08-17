@@ -1,0 +1,50 @@
+@import './header';
+@import './footer';
+@import './customBtn';
+@import './popup';
+@import './home';
+@import './slideWithCustomScroll';
+@import './slideWithPopup';
+@import './_swiper';
+@import './slider';
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html, body{
+   background-color: rgba($color: #000000, $alpha: .7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+}
+
+@font-face{
+   font-family: "Circe";
+   src: url('../../fonts/Circe-Regular.ttf');
+}
+
+@font-face{
+   font-family: "DINPro";
+   src: url('../../fonts/DINPro.ttf');
+}
+
+@font-face{
+   font-family: "DINPro Bold";
+   src: url('../../fonts/DINPro-Bold.ttf');
+}
+
+@font-face{
+   font-family: "Gilroy Light";
+   src: url('../../fonts/Gilroy-Light.ttf');
+}
+
+@font-face{
+   font-family: "Gilroy ExtraBold";
+   src: url('../../fonts/Gilroy-Extrabold.ttf');
+}

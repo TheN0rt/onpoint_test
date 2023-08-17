@@ -1,0 +1,19 @@
+header{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+
+   & > span{
+      border-width: .5px;
+      border-style: solid;
+      height: 27px;
+   }
+
+   & > p{
+      font-size: 18px;
+      font-family: "Circe";
+      color: rgb(39, 39, 39);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+   }
+}

@@ -1,0 +1,156 @@
+.home{
+   width: 1024px;
+   height: 768px;
+   display: flex;
+   flex-direction: column;
+   // background: url('../../img/bg.png');
+   background-repeat: no-repeat;
+   padding: 30px 50px 10px;
+   position: relative;
+
+   .bakt{
+      position: absolute;
+      z-index: 16;       
+   }
+   
+   .virus{
+      position: absolute;
+      z-index: 17;       
+   }
+
+   .sperm{
+      position: absolute;
+   }
+   
+   & > img{
+      position: absolute;
+
+      &:nth-child(1){
+         top: 80px;
+         left: 0px;
+      }
+
+      &:nth-child(2){
+         bottom: 160px;
+         left: 10px;
+         animation: leftBakAnim 8s ease-in-out infinite alternate;
+      }
+
+      &:nth-child(3){
+         top: 220px;
+         right: 80px;
+         animation: rightVirusAnim 10s ease-in-out infinite;
+         z-index: 22;
+      }
+
+      &:nth-child(4){
+         top: 60px;
+         right: 220px;
+         animation: topSmallBaktAnim 10s ease-in-out infinite alternate-reverse;
+      }
+
+      &:nth-child(5){
+         bottom: 40px;
+         left: -20px;
+      }
+      
+      &:nth-child(6){
+         z-index: 21;
+         top: 160px;
+         left: 420px;
+      }
+
+      &:nth-child(7){
+         top: 30px;
+         right: 60px;
+      }
+
+      &:nth-child(8){
+         bottom: 40px;
+         left: 330px;
+      }
+
+      &:nth-child(9){
+         bottom: 0px;
+         right: 263px;
+         animation: bigVirusAnim 8s ease-in-out infinite alternate-reverse;
+      }
+   }
+
+   & > .container{
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      justify-content: center;
+      margin-top: -50px;
+   
+      & > p{
+            font-size: 28px;
+            font-family: "DINPro";
+            text-transform: uppercase;
+      }
+   
+      & > h1{
+         z-index: 20;
+            font-weight: 400;
+            font-size: 110px;
+            font-family: "Gilroy Light";
+            text-transform: uppercase;
+            text-align: left;
+            letter-spacing: 5px;
+   
+            & > span{
+               font-family: "Gilroy ExtraBold";
+               font-weight: 700;
+            }
+      }
+   }
+}
+
+@keyframes bigVirusAnim {
+   0%{
+      transform: scale(1.5) translate(40px, 10px);
+   }
+   
+   100%{
+      transform: translate(-40px, -10px) scale(1.2);
+   }
+}
+
+@keyframes leftBakAnim {
+   0%{
+      transform: translate(60px, 60px);
+   }
+   
+   100%{
+      transform: translate(-10px, 10px);
+   }
+}
+
+@keyframes topSmallBaktAnim {
+   0%{
+      transform: scale(1.2) translate(30px, 40px);
+   }
+   
+   100%{
+      transform: translate(-30px, -10px) scale(1);
+   }
+}
+
+@keyframes rightVirusAnim {
+   0%{
+      transform: scale(1), translate(0,0) rotate(-125deg);
+   }
+   
+   33%{
+      transform: translate(-60px, -100px) scale(1.1) rotate(-45deg);
+   }
+   
+   66%{
+      transform: translate(-120px, -80px) rotate(-90deg);
+   }
+   
+   100%{
+      transform: scale(1), translate(0,0) rotate(-125deg);
+   }
+}
