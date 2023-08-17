@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/onpoint_test/static/css/main.8eaf567c.css",
+    "main.js": "/onpoint_test/static/js/main.44a006a9.js",
+    "static/media/bg.png": "/onpoint_test/static/media/bg.a04f33ce60ecef9ed454.png",
+    "static/media/Circe-Regular.ttf": "/onpoint_test/static/media/Circe-Regular.f80cf2f1a50fc5107f4c.ttf",
+    "static/media/bottle.png": "/onpoint_test/static/media/bottle.62ce9fed8cfc4702d044.png",
+    "static/media/DINPro.ttf": "/onpoint_test/static/media/DINPro.1b0768c360d049fff810.ttf",
+    "static/media/DINPro-Bold.ttf": "/onpoint_test/static/media/DINPro-Bold.f50b65ea926ab3b5f2bb.ttf",
+    "static/media/Gilroy-Light.ttf": "/onpoint_test/static/media/Gilroy-Light.0ac7c2f9cb59ea1ba11c.ttf",
+    "static/media/Gilroy-Extrabold.ttf": "/onpoint_test/static/media/Gilroy-Extrabold.92e435f7fae6070d73bb.ttf",
+    "static/media/centerSperm.png": "/onpoint_test/static/media/centerSperm.ddd79f80fe7351dcc855.png",
+    "static/media/pink_sperm_1.png": "/onpoint_test/static/media/pink_sperm_1.e936a95493e224a5a798.png",
+    "static/media/virus_3.png": "/onpoint_test/static/media/virus_3.1e464377a99494306981.png",
+    "static/media/topRightSperm.png": "/onpoint_test/static/media/topRightSperm.ab5a0e1debe6e9612338.png",
+    "static/media/topRightSpermMini.png": "/onpoint_test/static/media/topRightSpermMini.a4eb10d046de5ad18d16.png",
+    "static/media/virus_1.png": "/onpoint_test/static/media/virus_1.191aa79535e4c03e858d.png",
+    "static/media/bakt_1.png": "/onpoint_test/static/media/bakt_1.d886b019b30841f76d83.png",
+    "static/media/pink_sperm.png": "/onpoint_test/static/media/pink_sperm.f9f34a553f97b74151d5.png",
+    "static/media/rightBottomSperm.png": "/onpoint_test/static/media/rightBottomSperm.57a2bca41d675f3afc7b.png",
+    "static/media/rightBottomPinkBubble.png": "/onpoint_test/static/media/rightBottomPinkBubble.ee86b2c098ed96c3b113.png",
+    "static/media/bakti_1.png": "/onpoint_test/static/media/bakti_1.a69989c60c082ab5cc01.png",
+    "static/media/virus_back_2.png": "/onpoint_test/static/media/virus_back_2.e090ae7997cc80580e09.png",
+    "static/media/bottomBlueBuble.png": "/onpoint_test/static/media/bottomBlueBuble.e8f35d7325ed9c999574.png",
+    "index.html": "/onpoint_test/index.html",
+    "main.8eaf567c.css.map": "/onpoint_test/static/css/main.8eaf567c.css.map",
+    "main.44a006a9.js.map": "/onpoint_test/static/js/main.44a006a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8eaf567c.css",
+    "static/js/main.44a006a9.js"
+  ]
+}
