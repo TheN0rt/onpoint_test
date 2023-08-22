@@ -9,8 +9,8 @@ const Popup = ({onCLose, popupRef, isActive}) => {
    const [isSliderActive, setSliderActive] = useState(true)
 
    const handleNextSlide = () => {
-      setSliderActive(false)
       if(numberOfSlide < 2) {
+         setSliderActive(false)
          setTimeout(() => {
             setNumber((prev) => prev+1)
             setSliderActive(true)
@@ -19,14 +19,23 @@ const Popup = ({onCLose, popupRef, isActive}) => {
    }
    
    const handlePrevSlide = () => {
-      setSliderActive(false)
       if(numberOfSlide > 1) {
+         setSliderActive(false)
          setTimeout(() => {
             setNumber((prev) => prev-1)
             setSliderActive(true)
          }, 500)
       }
    }
+
+   const handleChangeSlide = (value) => {
+      setSliderActive(false)
+      setTimeout(() => {
+         setNumber(+value)
+         setSliderActive(true)
+      }, 500)
+   }
+
   return (
     <div className={`popup ${isActive ? 'active' : ''}`} ref={popupRef}>
       <div className="popup__body">
@@ -81,11 +90,15 @@ const Popup = ({onCLose, popupRef, isActive}) => {
                <img src={btn_prev} alt="left" onClick={handlePrevSlide}/>
                <div className="radio-block">
                   <input type="radio" name="slider" 
-                  checked={numberOfSlide === 1 ? "active" : null}
-                  onClick={() => setNumber(1)}/>
+                  checked={numberOfSlide === 1 ? true : false}
+                  value={1}
+                  onChange={(e) => handleChangeSlide(e.target.value)}
+                  />
                   <input type="radio" name="slider"
-                  checked={numberOfSlide === 2 ? "active" : null}
-                  onClick={() => setNumber(2)}/>
+                  checked={numberOfSlide === 2 ? true : false}
+                  value={2}
+                  onChange={(e) => handleChangeSlide(e.target.value)}
+                  />
                </div>
                <img src={btn_next} alt="right" onClick={handleNextSlide}/>
             </div>
