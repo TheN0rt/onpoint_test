@@ -24,7 +24,6 @@ const SlideWithPopup = ({popupRef, resetCurrentIndex}) => {
    const handleOnClick = (event) => {
       event.preventDefault()
       setPopupActive(true)
-      console.log('active')
    }
 
    const handleOnClose = (event) => {
